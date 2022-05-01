@@ -1,0 +1,83 @@
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 14px;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    max-width: 700px;
+}
+header {
+  background-color: #999;
+  font-family: 'Raleway', sans-serif;
+  grid-area: header;
+}
+header, footer{
+    text-align: center;
+    background-color: rgb(19, 75, 158);
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 8px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Radio Canada', sans-serif;
+}
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"first-grid second-grid third-grid";
+	grid-gap: 15px;
+	padding-top: 15px;
+	grid-area: main;
+    padding-bottom: 15px;
+}
+.first-grid img, .second-grid img, .third-grid img{
+    width: auto;
+    max-width: 205px;
+    height: auto;
+    margin: 8px;
+    border-style: solid;
+    background-color: rgb(239, 233, 233);
+    align-items:center;
+	text-align:center;
+}
+.first-grid, .second-grid, .third-grid{
+    border-color: #aaaaaa;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(239, 233, 233);
+    box-shadow: 0 0 10px #000;
+}
+.first-grid{
+    grid-area:first-grid;
+}
+.second-grid{
+    grid-area: second-grid;
+}
+.third-grid{
+    grid-area: third-grid;
+}
+footer{
+    grid-area: footer;
+}
+h3{
+    font-size: 1.5rem;
+    background-color:rgb(19, 75, 158);
+    padding: 10px;
+    border-radius: 10px;
+    align-content: start;
+    color: aliceblue;
+}
+p{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+a{
+  margin: 10px; 
+} 
+
