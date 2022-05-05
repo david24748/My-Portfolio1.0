@@ -1,4 +1,4 @@
-@media only screen and (max-width: 43em) {
+@media only screen and (max-width: 38.5em) {
     .grid-area {
         grid-template-columns: 1fr;
         grid-template-areas:
