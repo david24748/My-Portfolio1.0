@@ -1,0 +1,140 @@
+header img{
+    width: 150px;
+    height: auto;
+}
+
+body {
+	max-width: 760px;
+	margin: 0 auto;
+    background-color: #F49F0A;
+}
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+    display: flex;
+	flex-direction: row;
+    font-size: 1.1rem;
+}
+nav div {
+	flex: 1 1 auto;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+nav a:hover {
+	background-color: #07BEB8;
+	color: yellow;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+}
+header,
+footer {
+	background-color: #07BEB8;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+    padding: 2px;
+}
+h1{
+    margin: 10px;
+}
+h1, h2, h3{
+    font-family: 'David Libre', serif;
+}
+.intro{
+    text-align: center;
+    margin: 10px;
+}
+.emily{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr;
+    background-color: #07BEB8;
+}
+.emily h3{
+    text-align: center;
+}
+.emily p{
+    margin: 10px;
+}
+img{
+    width:400px;
+    height: auto;
+}
+.alberto{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr;
+    margin-top: 50px;
+    background-color: #07BEB8;
+
+}
+.alberto img{
+    height: 250px;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+.alberto h3{
+    grid-column: 2;
+    text-align: center;
+}
+.alberto p{
+    margin: 10px;
+}
+p, footer{
+    font-family: 'Roboto', sans-serif;
+}
+@media only screen and (max-width: 35em){
+	nav{
+	flex-direction: column;	
+	}
+	h1{
+		font-size: 25px;
+	}
+    .emily{
+        grid-template-columns: 1fr;
+    }
+    .emily img{
+        width: 300px;
+        margin: auto;
+    }
+    .alberto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 280px;
+    }
+    .alberto img{
+        width: 300px;
+        height: auto;
+        margin: auto;
+    }
+    .alberto h3{
+        grid-column: 1;
+        grid-row: 1;
+    }
+	
+}
+@media only screen and (max-width: 20em){
+	h1{
+		font-size: 15px;
+	}
+    .emily img{
+        width: 200px;
+        margin: auto;
+    }
+    .alberto img{
+        width: 200px;
+        height: auto;
+        margin: auto;
+    }
+}
+
