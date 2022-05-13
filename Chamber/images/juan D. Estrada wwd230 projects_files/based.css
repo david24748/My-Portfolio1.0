@@ -1,0 +1,108 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #07BEB8;
+    padding: 5px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #bbb;
+}
+header img{
+    width: 50px;
+    height: auto;
+}
+
+body {
+	max-width: 760px;
+	margin: 0 auto;
+    background-color: #F49F0A;
+}
+.date {
+	margin: 0.5rem;
+	border: 1px solid rgb(0, 0, 0);
+	padding: 5px;
+	background-color: transparent;
+}
+nav {
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: right;
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: ;
+    
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1px;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    background-color: wheat;
+}
+nav img{
+    width: 30px;
+}
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: none;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+}
+p{
+	margin: 15px;
+}
+footer {
+	background-color: #07BEB8;
+    padding: 5px 0;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #bbb;
+}
+h1{
+	font-family: 'David Libre', serif;
+}
+p, footer{
+	font-family: 'Roboto', sans-serif;
+}
+footer img{
+    width:80px;
+}
+
+
+
+
+@media only screen and (max-width: 30em){
+	nav{
+	flex-direction: column;	
+	}
+	h1{
+		font-size: 25px;
+	}
+	
+}
+
