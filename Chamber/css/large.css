@@ -78,7 +78,7 @@
 
 	}
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block;
 		flex: 1 1 auto;
 		font-size: 5px;
 	}
