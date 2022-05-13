@@ -3,6 +3,21 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
+	header h1{
+		grid-column: 2/5;
+	}
+	.date{
+		grid-column: 1/11;
+	}
+	header{
+
+		grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 80px;
+		border-bottom: 1px solid #bbb;
+	}
+	.social{
+		grid-column: 10;
+		padding-top: 10px;
+	}
 	.box1{
 		grid-column: 2/4;
 		grid-row: 1/4;
@@ -42,4 +57,40 @@
    		grid-row: 2;
 		height: 200px;
 	}	
+	footer img{
+		margin-left: 50px;
+		margin-top: 75px;
+	}
+	h3, .address{
+		margin-left: 50px;
+	}
+	nav{
+		width: 100px;
+		grid-column: 5/7;
+	}
+	nav button{
+		display:none;
+	}
+	.navigation {
+		display: flex;
+		padding-top: 10px;
+		text-align: center;
+
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+		font-size: 5px;
+	}
+	.navigation a {
+		display: inline;
+		text-align: center;
+		font-weight: 15;
+		font-size: 15px;
+		padding: 14px;
+
+	}
+	.navigation li:first-child {
+		display: none;
+	}
 }

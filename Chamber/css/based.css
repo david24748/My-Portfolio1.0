@@ -6,6 +6,13 @@ header{
     margin: 0 auto;
     border-bottom: 1px solid #bbb;
 }
+.face{
+    width:25px;
+    height:20px;
+}
+.twit{
+    width:25px;
+}
 .logo{
     width: 60px;
     height: auto;

@@ -62,5 +62,7 @@ h5{
     grid-column: 1/4;
     grid-row: 5/8;
 }
-	
+nav{
+    width: 120px;
+}	
 }
