@@ -6,6 +6,43 @@ header{
     margin: 0 auto;
     border-bottom: 1px solid #bbb;
 }
+img{
+    width: 50px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.box1{
+    margin: 10px auto;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1/3;
+    height: auto;
+    background-color: transparent;
+}
+.box1 img{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    }
+.stats {
+    text-align: center;
+    font-size: 5px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 10px;
+    right: 10px;
+    background: radial-gradient(#eee, #648cda);
+    border: 1px solid #000;
+    box-shadow: 0 0 30px #333;
+    opacity: 0.9;
+}
+.box2{
+    background-color: #756D54;
+    margin-bottom: 10px;
+}
 .face{
     width:25px;
     height:20px;
@@ -90,7 +127,7 @@ nav button{
 	content: none;
 }
 nav li a:hover{
-    background-color: #06BEB8;
+    background-color: rgb(29, 215, 212);
 }
 footer {
 	display: flex;
@@ -127,25 +164,55 @@ footer img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/3;
-    background-color: rgb(82, 77, 77);
+    background-color: #756D54;
     padding: 10px;
     margin-left: 15px;
     margin-right: 20px;
 }
-.box1, .box2, .box3, .box4, .extra, .box5, .box6 {
+.box2, .box3, .box4, .extra, .box5, .box6 {
     width: auto;
-    height: 80px;
+    grid-column: 1;
+    height:auto;
     border-radius: 5px;
-    background-color: rgb(207,232,220);
+    background-color: #756D54;
     padding: 2px;
     margin-left: 15px;
     margin-right: 20px;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
   }
   .box5, .box6{
       grid-column: 1/3;
       padding-bottom: 10px;
+      background-color: #e9e3d1;
   }
+  .box4{
+      margin-top: 1px;
+      padding-top: 1px;
+  }
+  .extra{
+      display: none;
+  }
+  .box3{
+      width: 200px;
+      margin: 10px auto;
+      padding-top: 1px;
+  }
+  .box7{
+      display: none;
+  }
+  #banner{
+      display: none;
+      margin: 0 auto;
+      border: 1px solid #bbb;
+      padding: 1rem;
+      text-align: center;
+      background-color: #bbb;
+      background-image: url("cssbackground-images/banner.jpeg");
+      
+  }
+
 
 
 
