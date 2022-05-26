@@ -111,6 +111,12 @@
 	h2{
 		padding-top: 5px;
 	}
+	.disas{
+		display: contents;
+	}
+	section p{
+		font-size: 12px;
+	}
 	.spo{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;

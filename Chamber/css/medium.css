@@ -134,6 +134,9 @@ h3{
     align-self: start;
     margin-left: 10px;
 }
+section p{
+    font-size: 12px;
+}
 .address{
     grid-column: 2;
     grid-row: 3;

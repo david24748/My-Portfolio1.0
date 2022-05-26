@@ -154,6 +154,15 @@ footer {
 h1{
 	font-family: 'David Libre', serif;
 }
+h2{ 
+    font-size: 16px;
+}
+section p{
+    font-size: 10px;
+}
+.disas{
+    display: none;
+}
 p, footer{
 	font-family: 'Roboto', sans-serif;
 }
