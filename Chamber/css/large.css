@@ -226,4 +226,28 @@
 	.navigation li:first-child {
 		display: none;
 	}
+
+	/*discovery page*/
+	.discovery img{
+		width: 300px;  
+	}
+	.cano{
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.itwo{
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.ifour{
+		grid-column: 2;
+	}
+	.Monserrate{
+		grid-row: 4;
+	}
+	.locals{
+		grid-column: 1/5;
+	}
+
+
 }
