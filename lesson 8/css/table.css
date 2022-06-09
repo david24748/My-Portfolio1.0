@@ -9,6 +9,10 @@ body{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
 }
+tbody tr:nth-of-type(3) td:last-child {
+    background-color: rgb(4, 60, 76);
+    color: rgb(233, 233, 233);
+}
 .til{
     background-color: rgb(158, 124, 189);
 }
@@ -17,6 +21,8 @@ table {
     border-spacing: 0;
     width: 100%;
     border: 1px solid rgb(12, 3, 3);
+    box-shadow: 10px 10px 20px rgb(34 118 141);
+
 }
 .til{
       text-align: center;
@@ -33,5 +39,7 @@ tr:nth-child(even) {
 td{
     border: 1px solid rgb(12, 3, 3);
 }
+
+
 
 
