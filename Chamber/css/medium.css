@@ -261,4 +261,14 @@ picture p{
 .ithree img:hover{box-shadow: 0 0 50px #333;}
 .ifour img{border-radius: 5px 150px;}
 .ifive img{filter: blur(1px) grayscale(75%);}
+
+/*join sizes*/
+.join{
+    grid-template-columns: 1fr;
+    width: 490px;
+    margin-bottom: 30px;
+}
+form{
+    width: 400px;
+}
 }

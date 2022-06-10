@@ -13,6 +13,8 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 }).format(now);
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
+
+
 //ham button
 
 const hambutton = document.querySelector('.primarynav');
@@ -34,6 +36,16 @@ const close = document.querySelector("#close");
 
 close.addEventListener("click", () => {
 	banner.style.display = "none";
+});
+
+/* Join banner */
+const bannerjoin = document.getElementById("bannerjoin"); 
+if (d === 1 || d === 2 || d === 3 || d === 4 || d === 5 || d === 6 || d === 7) {
+	bannerjoin.style.display = "block";
+}
+const closee = document.querySelector("#closee");
+close.addEventListener("click", () => {
+	bannerjoin.style.display = "none";
 });
 
 // local storage
@@ -86,3 +98,14 @@ if('IntersectionObserver' in window) {
       loadImages(img);
     });
   }
+
+  //Join js
+  function myFunction() {
+
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
+    document.getElementById("btnSubmit").value = dateTime;
+    
+    }
