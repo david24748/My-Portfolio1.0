@@ -1,0 +1,18 @@
+@media only screen and (min-width: 645px){
+    body{
+        max-width: 650px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+      main section{
+        width: 260px;
+        text-align: center;
+        border: 1px solid rgb(99, 103, 103);
+        margin: 10px;
+        background-color: rgb(85, 98, 0);
+        margin-left: 30px;
+    }
+}
