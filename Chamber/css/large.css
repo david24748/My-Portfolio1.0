@@ -266,5 +266,16 @@
 		width: 210px;
 	}
 
+	/*discoverypage*/
+	.list section{
+		width: 650px;
+	}
+	.infocards {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
 
 }

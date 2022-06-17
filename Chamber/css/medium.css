@@ -271,4 +271,48 @@ picture p{
 form{
     width: 400px;
 }
+/*directory*/
+
+.infocards {
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	align-items: center;
+}
+section{
+    width: 200px;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.infocards img{
+    width:130px;
+}
+.list{
+    grid-auto-columns: 1fr;
+}
+.list section{
+    width: 570px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list section p {
+	display: block; /* smaller viewports only */
+    grid-row: 1;
+}
+.list section h2{
+    grid-row: 1;
+}
+.list section a{
+    grid-row: 1;
+    grid-column: 6;
+    margin: 15px;
+}
+.list div{
+    grid-template-columns: 1fr;
+}
+
+
+
 }

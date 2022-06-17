@@ -18,7 +18,6 @@ function buildProphetCards(data) {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let p = document.createElement('p');
-        let ptwo = document.createElement('p1');
         let img = document.createElement('img');
 
         let fullName = `${prophet.name} ${prophet.lastname}`;

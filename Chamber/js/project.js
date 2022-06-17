@@ -1,49 +1,3 @@
-//directory page
-const URL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
-const cards = document.querySelector('.cards');
-
-async function getProphets() {
-    let response = await fetch(URL);
-    if (response.ok) {
-        let data = await response.json();
-        buildProphetCards(data);
-    } else {
-        throw Error(response.statusText);
-    }
-}
-
-function buildinfoCards(data) {
-    let nonBogota = data.chamberinfo.filter(p => p.address !== 'Bogota');
-    console.log(nonBogota)
-    nonBogota.forEach(chambein => {
-        let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let p = document.createElement('p');
-        let img = document.createElement('img');
-
-        let fullName = `${chambein.name} ${chambein.lastname}`;
-
-        h2.innerHTML = `${chambein.company}`;
-        p.innerHTML = `address: <strong>${chambein.address}</strong> <br> Phone: <strong>${chambein.phone}</strong> <br> Web page: <strong>${chambein.sitio}</strong> <br> membership level: <strong>${chambein.member}</strong>`;
-        img.setAttribute('src', chambein.img);
-        img.setAttribute('alt', `Picture of company ${company}`);
-        img.setAttribute('loading', 'lazy');
-
-        card.setAttribute('class', chambein.company);
-
-
-        card.append(h2);
-        card.append(p);
-        card.append(img)
-
-        cards.append(card);
-        
-    });
-}
-getinfo();
-
-
-
 // last modified
 let text = document.lastModified;
 document.querySelector("#time").textContent = text;
@@ -51,7 +5,7 @@ document.querySelector("#time").textContent = text;
 let current_date = new Date();
 let year = current_date.getFullYear();
 document.getElementById("year").textContent = year;
-document.getElementById("datetime").textContent = current_date;
+document.querySelector('.date').textContent = current_date;
 const datefieldUK = document.querySelector(".date"); 
 const now = new Date();
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
