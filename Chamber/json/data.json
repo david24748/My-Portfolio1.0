@@ -1,0 +1,76 @@
+{
+    "chamberinfo": [
+      {
+        "company": "OIT",
+        "address": "Carrera 60 # 24 09",
+        "phone": "317 402 3000",
+        "sitio": "https://agenciaoit.com/",
+        "member": "gold",
+        "img": "images//oit.png"
+      },
+      {
+        "company": "Frosh Colombia",
+        "address": "Ak. 7 ## 72a - 64 Int 18",
+        "phone": "6000098",
+        "sitio": "https://froschlatam.com/",
+        "member": "gold",
+        "img": "images//Frosch.png"
+      },
+      {
+        "company": "Global mercado",
+        "address": "Cra. 16 ##80-18",
+        "phone": "6517777",
+        "sitio": "https://www.mercadodelturismo.com/",
+        "member": "gold",
+        "img": "images//Global.png"
+      },
+      {
+        "company": "Planes turisticos",
+        "address": "Avenida 68 # 75A-50",
+        "phone": "316 6613930",
+        "sitio": "https://planesturisticos.com/",
+        "member": "silver",
+        "img": "images//Planes.png"
+      },
+      {
+        "company": "Vive",
+        "address": "carrera 59, Cl. 128b #79",
+        "phone": "313 3708021",
+        "sitio": "https://www.vivecolombia.es/",
+        "member": "silver",
+        "img": "images//Vive.png"
+      },
+      {
+        "company": "Agencia AZ",
+        "address": "Cra. 15 #100 69",
+        "phone": "311 8763606",
+        "sitio": "https://www.agenciasdeviajes.com.co/item/agencia-de-viajes-az/",
+        "member": "silver",
+        "img": "images//Agencia.png"
+      },
+      {
+        "company": "Territorio",
+        "address": "Cl. 173 ## 55-52",
+        "phone": "3003075",
+        "sitio": "https://www.territoriocolombia.com/",
+        "member": "bronze",
+        "img": "images//Territorio.png"
+      },
+      {
+        "company": "Tour",
+        "address": "Cl. 70 #11-33",
+        "phone": "7439814",
+        "sitio": "https://www.viajestourcolombia.com/",
+        "member": "bronze",
+        "img": "images//Tour.png"
+      },
+      {
+        "company": "Transatlantics",
+        "address": "https://www.viajesatlantics.com/",
+        "phone": "313 4416810",
+        "sitio": "https://www.viajesatlantics.com/",
+        "member": "bronze",
+        "img": "images//Trans.png"
+      }
+    ]
+  }

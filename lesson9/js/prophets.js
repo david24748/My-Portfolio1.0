@@ -34,7 +34,6 @@ function buildProphetCards(data) {
 
         card.append(h2);
         card.append(p);
-        card.append(ptwo);
         card.append(img)
 
         cards.append(card);
