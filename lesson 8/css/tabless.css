@@ -1,0 +1,14 @@
+@media only screen and (max-width: 480px) {
+    table {
+        font-size: 30px;
+        border-spacing: 10px;
+        width: 637px;
+        margin: auto;
+    }
+    h5{
+        font-size: 25px;
+    }
+    
+    
+
+}
