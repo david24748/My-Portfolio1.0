@@ -13,10 +13,10 @@ main img{
     box-shadow: 0 0 30px #000000;
 }
 main section{
-    width: auto;
     text-align: center;
     border: 1px solid rgb(99, 103, 103);
-    margin: 10px;
+    margin: 0.25rem;
+    padding: 0.35rem;
     background-color: rgb(85, 98, 0);
 }
 main{
@@ -28,7 +28,7 @@ h2{
     color: rgb(149, 192, 176);
 }
 .cards{
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 
