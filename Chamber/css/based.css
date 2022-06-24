@@ -238,8 +238,9 @@ footer img{
 .ifive img{
     padding-top: 50px;
 }
-picture p{
+picture d1{
     margin-top: -13px;
+    text-align: center;
 }
 .discovery img{
     width: 200px; 
@@ -251,9 +252,7 @@ picture p{
 .discovery p{
     padding-bottom: 0px;
 }
-picture p{
-    text-align: center;
-}
+
 .ione img:hover {box-shadow: 0 0 50px #333;}
 .itwo img {border-radius: 5px 150px;}
 .ithree img:hover{box-shadow: 0 0 50px #333;}
@@ -407,18 +406,18 @@ footer{
 .infocards img{
     width: 200px;
 }
-section{
+.infocards section{
     border: 1px solid #000;
     background-color: #937D64;
     margin: 20px;
 }
-section img{
+.infocards img{
     text-align: center;
 }
-section p{
+.infocards p{
     font-size: 15px;
 }
-section h2{
+.infocards h2{
     font-size: 30px;
 }
 .menu {

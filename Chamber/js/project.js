@@ -27,6 +27,8 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove("
 
 let d = new Date().getDate();
 
+
+/* Join banner */
 const banner = document.getElementById("banner");
 if (d === 1 || d === 2) {
 	banner.style.display = "block";
@@ -38,7 +40,7 @@ close.addEventListener("click", () => {
 	banner.style.display = "none";
 });
 
-/* Join banner */
+
 const bannerjoin = document.getElementById("bannerjoin"); 
 if (d === 1 || d === 2 || d === 3 || d === 4 || d === 5 || d === 6 || d === 7) {
 	bannerjoin.style.display = "block";

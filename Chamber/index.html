@@ -39,9 +39,9 @@
     <main>
       <div class="box1">
         <picture>
-          <source media= "(min-width: 705px)" srcset="images/largewomen.jpg">
-          <source media= "(min-width: 465px)" srcset="images/mediumwomen.jpg">
-          <img src="images/smallwomen.jpg" alt="small picture size">
+          <source media= "(min-width: 705px)" srcset="images/Jerico-Image-co.jpeg">
+          <source media= "(min-width: 465px)" srcset="images/Jerico-Image-co.jpeg">
+          <img src="images/Jerico-Image-co.jpeg" alt="small picture size">
         </picture>
         <section class="stats">
           <h2>Join the Chamber</h2>
@@ -57,10 +57,13 @@
 
       <div class="box3">
         <h4>Weather</h4>
-        <p class="firstp">sunny <span id="temp">50</span>.F</p>
-        <img src="images/simbolo-clima.jpeg" alt="sunny simbol">
-        <P class="secondp">W. speed: <span id="windSpeed">5</span>mph</P>
-        <p class="thirdp">Wind C: <span id="windChill">0</span></p>
+        <p class="firstp"><span id="current-temp"></span>&deg;F</p>
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+        </figure>
+        <P class="secondp">W. speed: <span id="windSpeed"></span></P>
+        <p class="thirdp">Wind C: <span id="windChill"></span></p>
       </div>
 
       <div class="box4">
@@ -109,9 +112,11 @@
       <p class="email">pointcom@gmal.com</p>
       <p class="number">302-206-9594</p>
       <p class="address">bulevard av 456 bis</p>
-      <h5> &copy; <span id="year"></span> // Juan D. Estrada // colombia // This document was last modified: <span id="time"></span></h5> 
+      <h5> &copy; <span id="year"></span> This page uses <a href="https://openweathermap.org/">OpenWeatherMap</a> as a weather data // Juan D. Estrada // colombia // This document was last modified: <span id="time"></span></h5> 
     </footer>
-    <script src="js//project.js"></script>
-    <script src="js//windchill.js"></script>
+    <script defer src="js//hambutton.js"></script>
+    <script defer src="js//lazyimages.js"></script>
+    <script defer src="js//lastmodifies.js"></script>
+    <script defer src="js//weatherchamber.js"></script>
   </body>
 </html>
