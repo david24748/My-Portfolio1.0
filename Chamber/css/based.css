@@ -5,6 +5,7 @@ header{
     max-width: 900px;
     margin: 0 auto;
     border-bottom: 1px solid #bbb;
+    margin-bottom: 29px;
 }
 img{
     width: 50px;
@@ -149,7 +150,7 @@ footer {
     margin: 0 auto;
     border-bottom: 1px solid #bbb;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 23px;
 }
 h1{
 	font-family: 'David Libre', serif;
@@ -168,15 +169,6 @@ p, footer{
 }
 footer img{
     width:80px;
-}
-.spo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1/3;
-    background-color: #756D54;
-    padding: 10px;
-    margin-left: 15px;
-    margin-right: 20px;
 }
 .box2, .box3, .box4, .extra, .box5, .box6 {
     width: auto;
@@ -362,12 +354,6 @@ textarea{
 .bottom button{
     margin-top: 15px;
 }
-header{
-    margin-bottom: 30px;
-}
-footer{
-    margin-top:  30px;
-}
 /*thanks pages*/
 .thanksmain{
     text-align: center;
@@ -463,6 +449,93 @@ footer{
     margin: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* contact page */
+
+#success_message{ display: none;}
+
+.contactpage{
+    text-align: center;
+}
+.contact{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.contactpage h3{
+    background-color:rgb(223 203 160);
+    padding: 27px;
+    margin-left: -5px;
+    margin-right: 0px;
+    margin-top: -30px;
+}
+.container h4{
+    text-align: center;
+}
+
+
+.fieldcontact{
+    border: 1px  transparent;
+    text-align: center;
+}
+.fieldcontact input{
+    width: 250px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.fieldcontact textarea{
+    width: 250px;
+    margin: 10px;
+}
+.contactbutton{
+    width: 310px;
+}
+.contacvisit{
+    text-align: center;
+}
+.ourinfo{
+    text-align: center;
+}
+
+/* spolight  */
+
+.gridindex img{
+    width: 150px;
+    
+}
+.spocards{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    border: 1px solid ;
+    margin: auto;
+    padding: 20px;
+    padding: .20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: rgb(223,203,160);
+}
+.spocards :nth-child(3){
+    display: none;
+}
+.spocards section{
+    border: 1px solid #000;
+    background-color: #937D64;
+    margin: 20px;
+    width: 286px;
+    height: 250px;
+}
+.spo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/3;
+    background-color: #756D54;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
 }
 
 

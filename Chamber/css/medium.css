@@ -207,6 +207,7 @@ footer {
     grid-template-columns: 109px 1fr 1fr ;
     grid-template-rows: 25px 25px 25px 25px 25px ;
 	justify-content: center;
+    margin-top: 14px;
 }
 footer img{
     width: 100px;
@@ -315,6 +316,74 @@ section{
     grid-template-columns: 1fr;
 }
 
+/* contact page */
+.contactpage{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contactpage h3{
+    grid-column: 1/3;
+    text-align: center;
+}
+.container{
+    grid-row: 2/4;
+    width: 250px;
+}
+.contact{
+    width: 280px;
+    margin: auto;
+}
+.fieldcontact input{
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.fieldcontact textarea{
+    width: 150px;
+    margin: 10px;
+}
+.contactbutton{
+    width: 150px;
+}
+.contactpage h3{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -30px;
+}
 
+/* spolight  */
+
+.gridindex img{
+    width: 100px;
+    
+}
+.spocards{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding: 20px;
+    padding: .20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.spocards section{
+    border: 1px solid #000;
+    background-color: #937D64;
+    margin: 20px;
+    width: 196px;
+    height: 214px;
+}
+.spo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/3;
+    background-color: #756D54;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 20px;
+    height: auto;
+}
 
 }
