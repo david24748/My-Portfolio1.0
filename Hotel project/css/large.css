@@ -1,0 +1,89 @@
+@media only screen and (min-width: 800px){
+    /* header */
+    .social{
+        grid-column: 6;
+        text-align: center;
+        margin-right: 10px;
+    }
+    nav{
+        width: 100px;
+        grid-column: 4/5;
+    }
+    nav button{
+        display:none;
+    }
+    .navigation {
+        display: flex;
+        padding-top: 10px;
+        text-align: center;
+
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+        font-size: 5px;
+    }
+    .navigation a {
+        display: inline;
+        text-align: center;
+        font-weight: 15;
+        font-size: 15px;
+        padding: 14px;
+
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+        /* box1*/
+    .stats{
+        height: 168px;
+        width: 512px;    
+    }
+    .stats h2{
+        font-size: 25px;
+        width: 416px;
+    }
+    .stats button{
+        font-size: 19px;
+        margin-top: 11px;
+        height: 50px;
+    }
+    /* boxes */
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .box2, .box3, .box4, .box5 {
+        width: 179px;
+        height: 282px;
+    }
+    .boxes p {
+        font-size: 18px;
+    }
+    .boxes h4 {
+        font-size: 22px;
+        margin-top: -12px;
+    }
+    /* Weather */
+    /* Weather table1 */
+    .currentweatherinfo {
+        height: 149px;
+        width: 248px;
+    }
+    
+    
+    /* Weather table2 */
+    .nextweatherinfo {
+        height: 180px;
+        width: 248px;
+    }
+    
+    
+    /* Weather table3 */
+    .doubleweatherinfo{
+        height: 180px;
+        width: 248px;
+    }
+}
+

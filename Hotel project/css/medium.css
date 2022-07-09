@@ -1,0 +1,177 @@
+@media only screen and (min-width: 406px){
+
+    /* boxes */
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .box2, .box3, .box4, .box5 {
+        width: 184px;
+        background-color: #bbb;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boxes p {
+        margin-left: 3px;
+        margin-top: -21px;
+        font-size: 12px;
+    }
+    .dot {
+        margin-left: 5px;
+    }
+    .boxes h4 {
+        margin-left: 3px;
+    }
+
+    /* fall in love*/
+
+    .fallmargin{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .fallinlove{
+        margin-left: 0px;
+        margin-right: 2px;
+        text-align: center;
+    }
+    .fallinlove h2{
+        color: #db545a;
+        margin-left: 57px;
+        font-size: 30px;
+    }
+    .roomone{
+        width: 256px;
+        margin-left: 67px;
+    }
+    
+    .fallsqu{
+        position: relative;
+        width: 233px;
+        height: 240px;
+        text-align: center;
+        margin-top: -86px;
+        margin-left: initial;
+        padding-left: 108px;
+    }
+    .fallsqu p{
+        margin-top: 0px;
+    }
+    .fallsqu h2{
+        text-align: center;
+    }
+
+    /* Weather table1 */
+    .superboxweather{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .currentweatherinfo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: initial;
+        margin-top: initial;
+        width: 162px;
+    }
+
+
+    /* Weather table2 */
+    .nextweatherinfo {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: initial;
+        width: 162px;
+    }
+
+
+    /* Weather table3 */
+    .doubleweatherinfo{
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 597px){
+    /* box1*/
+    .stats{
+    height: 136px;
+    width: 352px;
+    }
+    .stats h2{
+        font-size: 19px;
+        width: 303px;
+        margin: auto;
+        margin-top: 14px;
+    }
+    .stats button{
+        opacity: 10;
+        font-size: 17px;
+        margin-top: 12px;
+        height: 43px;
+    }
+    /* boxes */
+    .box2, .box3, .box4, .box5 {
+        width: 264px;
+    }
+    /* section fall in love */
+    .roomone{
+        width: 261px;
+        margin-left: -36px;
+    }
+    .roomtwo{
+        display: block;
+        width: 214px;
+        margin-top: -210px;
+        margin-left: 306px;
+    }
+
+    .fallsqu {
+        width: 282px;
+        margin-left: -76px;
+    }
+    /* Weather table1 */
+    .superboxweather{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .currentweatherinfo {
+        grid-column: 1;
+        height: 166px;
+        width: 174px;
+    }
+
+    /* Weather table2 */
+    .nextweatherinfo {
+        grid-column: 2;
+        width: 174px;
+        height: 200px;
+    }
+
+    /* Weather table3 */
+    .doubleweatherinfo {
+        grid-column: 3;
+        width: 174px;
+        height: 200px;
+        margin-top: initial;
+    }
+}
+@media only screen and (min-width: 730px){
+    /* section fall in love */
+    .roomthree{
+        display: block;
+        width: 242px;
+        margin-left: 483px;
+        margin-top: -239px;
+    }
+    /* Weashington */
+    .washingtontemple img{
+        width: 501px;
+    }
+}
+
