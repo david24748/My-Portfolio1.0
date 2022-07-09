@@ -1,4 +1,4 @@
-const URL = 'https://david24748.github.io/wdd230/Chamber/js/data.json';
+const URL = 'https://david24748.github.io/wdd230/Hotel-project/js/data.json';
 const cards = document.querySelector('.infocards');
 
 fetch(URL)
@@ -6,39 +6,48 @@ fetch(URL)
   return response.json();
 })
 .then( function (jsonObject){
-  const companies = jsonObject["chamberinfo"];
+  const Temples = jsonObject["Templesinfo"];
   console.table(jsonObject);
-  companies.forEach(displaycompanies);
+  Temples.forEach(displaytemples);
+  console.log(displaytemples)
 })
 
-function displaycompanies(chamberinfo){
+function displaytemples(Templesinfo){
   let card = document.createElement("section");
   let name = document.createElement("h2");
   let address = document.createElement("p");
   let phone = document.createElement("p");
   let website = document.createElement("a");
-  let member = document.createElement("p");
-  let logo = document.createElement("img");
+  let services = document.createElement("p");
+  let picture = document.createElement("img");
+  let email = document.createElement("p")
+  let ordinances = document.createElement("p")
+  let closures = document.createElement("p")
   
 
-  name.textContent = `${chamberinfo.company}`;
-  address.textContent = `${chamberinfo.address}`;
-  phone.textContent = `${chamberinfo.phone}`;
-  website.textContent = `details`;
-  website.href= `${chamberinfo.sitio}`;
-  member.textContent = `${chamberinfo.member}`;
-  logo.setAttribute('src', chamberinfo.img);
-  logo.setAttribute('alt', chamberinfo.company)
+  name.textContent = `${Templesinfo.temple}`;
+  address.textContent = `${Templesinfo.address}`;
+  phone.textContent = `${Templesinfo.phone}`;
+  services.textContent = `${Templesinfo.services}`
+  closures.textContent = `${Templesinfo.closures}`
+  ordinances.textContent = `${Templesinfo.ordinances}`
+  email.textContent = `${Templesinfo.email}`
+  website.textContent = `Click here to learn the history!`;
+  website.href= `${Templesinfo.history}`;
+  picture.setAttribute('src', Templesinfo.img);
+  picture.setAttribute('alt', Templesinfo.temple)
 
   card.setAttribute('class', 'grid');
 
 
   card.appendChild(name)
-  card.appendChild(address)
+  card.appendChild(picture)
   card.appendChild(phone)
+  card.appendChild(address)
+  card.appendChild(email)
   card.appendChild(website)
-  card.appendChild(member)
-  card.appendChild(logo)
+  card.appendChild(services)
+  card.appendChild(ordinances)
+  card.appendChild(closures)
   cards.appendChild(card)
 }
-displaycompanies()

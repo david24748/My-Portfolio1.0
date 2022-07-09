@@ -1,11 +1,11 @@
 {
-    "chamberinfo": [
+    "Templesinfo": [
       {
-        "company": "Italy Temple",
+        "temple": "Italy Temple",
         "address": "Via di Settebagni, 354/380",
         "phone": "(39) 06 9480 5138",
-        "sitio": "italytemple@churchofjesuschrist.com",
-        "member": "services: Clothing rental available, Patron housing available, Distribution center nearby",
+        "email": "italytemple@churchofjesuschrist.com",
+        "services": "services: Clothing rental available, Patron housing available, Distribution center nearby",
         "history":"https://tempiodiroma.org/history-of-rome-temple/#:~:text=The%20history%20of%20the%20Rome,was%20baptized%20in%20Boston%2C%20Massachusetts.",
         "ordinances":"ordinances: baptism, confirmation,Melchizedek Priesthood ordination, initiatory, endowment, and then sealing",
         "sessions":"sessions: 08:00AM - 09:00PM",
@@ -13,11 +13,11 @@
         "img": "images//temple-Italy.jpeg"
       },
       {
-        "company": "Oakland Temple",
+        "temple": "Oakland Temple",
         "address": "2138 Cedar St, Berkeley,",
         "phone": "(1) 510-531-3200",
-        "sitio": "oaklandtemple@churchofjesuschrist.com",
-        "member": "services: Clothing rental available, Patron housing available, Distribution center nearby",
+        "email": "oaklandtemple@churchofjesuschrist.com",
+        "services": "services: Clothing rental available, Patron housing available, Distribution center nearby",
         "history":"https://templehill.org/history-of-oakland-temple/",
         "ordinances":"ordinances: baptism, confirmation,Melchizedek Priesthood ordination, initiatory, endowment, and then sealing",
         "sessions":"sessions: 08:00AM - 09:00PM",
@@ -25,11 +25,11 @@
         "img": "images//Oakland-temple.jpeg"
       },
       {
-        "company": "Gilbert Temple",
+        "temple": "Gilbert Temple",
         "address": "3301 S Greenfield Rd, Gilbert",
         "phone": "(1) 480-822-5000",
-        "sitio": "gilberttemple@churchofjesuschrist.com",
-        "member": "services: Clothing rental available, Distribution center nearby",
+        "email": "gilberttemple@churchofjesuschrist.com",
+        "services": "services: Clothing rental available, Distribution center nearby",
         "history":"https://newsroom.churchofjesuschrist.org/multimedia/file/history-of-the-gilbert-arizona-temple#:~:text=The%20town%20of%20Gilbert%20was,established%20in%20Mesa%20and%20Chandler.",
         "ordinances":"ordinances: baptism, confirmation,Melchizedek Priesthood ordination, initiatory, endowment, and then sealing",
         "sessions":"sessions: 08:00AM - 09:00PM",
@@ -37,11 +37,11 @@
         "img": "images//Gilbert-Arizona-temple.jpeg"
       },
       {
-        "company": "Orlando Temple",
+        "temple": "Orlando Temple",
         "address": "9000 Windy Ridge Rd, Windermere",
         "phone": "(1) 407-876-0022",
-        "sitio": "orlandotemple@churchofjesuschrist.com",
-        "member": "services: Clothing rental available, Distribution center nearby",
+        "email": "orlandotemple@churchofjesuschrist.com",
+        "services": "services: Clothing rental available, Distribution center nearby",
         "history":"https://churchofjesuschristtemples.org/orlando-florida-temple/",
         "ordinances":"ordinances: baptism, confirmation,Melchizedek Priesthood ordination, initiatory, endowment, and then sealing",
         "sessions":"sessions: 08:00AM - 09:00PM",
