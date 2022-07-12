@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css//small.css">
+    <link rel="stylesheet" href="css//medium.css">
+    <link rel="stylesheet" href="css//large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster&family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>juan D. Estrada wwd230 projects</title>  
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="images//logohotel.webp" alt="Logo">
+      <h1>Temple Inn & Suites</h1>
+      <div class="date"></div>
+      <div class="social">
+        <a href="https://es-la.facebook.com/"><img class="face" src="images/facebook-logo.png" alt="facebook logo" ></a>
+        <a href="https://twitter.com/home?"><img class="twit" src="images/twiter-img.png" alt="twitter logo" ></a>
+      </div>
+      
+      <nav>
+        <button class="primarynav">&#9776;</button>
+        <ul class="navigation">
+        <li><a href="discover.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Temple.html">Temples</a></li>
+        <li><a href="">services</a></li>
+        </ul>
+      </nav> 
+    </header>
+
+
+    <main class="reserve">
+        <div class="reservationform">  
+            <form id="contact" action="thankspage.html" method="get">
+              <h3>Reservation form</h3>
+              <h4>You are just steps away from staying with us!</h4>
+              <fieldset>
+                <input placeholder="full name" type="text" tabindex="1" pattern="[a-zA-Z'-'\s]*" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+              </fieldset>
+              <fieldset>
+                <select name="states" class="states" >
+                    <option value="select">Please select your location</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <select name="locations" class="states" >
+                    <option value="select">Please select reservation location</option>
+                    <option value="location1">4800 Montgomery Ln #300, Bethesda, MD</option>
+                    <option value="location2">202 N Main St, Salt Lake City, UT 84103</option>
+                    <option value="location3">4402 Phillips, Glenview, IL 60026</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <select name="rooms" class="states" >
+                    <option value="select">Please select the number of rooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <p>Arrival date:</p>
+                <input placeholder="date of reservation" type="datetime-local" tabindex="5" required>
+              </fieldset>
+              <fieldset>
+                <p>Departure date:</p>
+                <input placeholder="date of reservation" type="datetime-local" tabindex="6" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="special accommodations/comments...." tabindex="6" ></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+            </form>
+          </section>
+
+
+    </main>
+
+    <footer>
+      <img src="images//logohotel.webp" alt="Logo">
+      <p class="email">6082340546</p>
+      <p class="number">Mon-Fri: 9:00 am-8:00 pm</p>
+      <p class="address">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      <h5> &copy; <span id="year"></span></a>as a weather data // Juan D. Estrada // colombia // This document was last modified: <span id="time"></span></h5> 
+    </footer>
+    <script defer src="js//readjson.js"></script>
+    <script defer src="js//data.json"></script>
+    <script defer src="js//gambbutton.js"></script>
+    <script defer src="js//lastmodified.js"></script>
+    <script defer src="js//likebutton.js"></script>
+  </body>
+</html>

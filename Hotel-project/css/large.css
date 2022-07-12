@@ -85,5 +85,55 @@
         height: 180px;
         width: 248px;
     }
+    /*-------------------------------------------------------Temple Page--------------------------------------------------------------------*/
+    /*stats */
+    .statstemples {
+        height: 96px;
+        top: 37px;
+        width: 438px;
+    }
+    .statstemples h2{
+        font-size: 25px;
+        width: 328px;
+    }
+    
+    /* imgg */
+    .templeimg{
+        text-align: center;
+    }
+    .templeimg img{
+        display: block;
+        width: 567px;
+        margin: auto;
+        height: 298px;
+        padding-bottom: 23px;
+    }
+    /* Likes */
+    .likebuttonss img{
+        width: 129px;
+        height: 121px;
+    }
+    .likebutton {
+        width: 164px;
+    }
+    .likebutton1 {
+        width: 164px;
+    }
+    .likebutton2 {
+        width: 164px;
+    }
+    .likebutton3 {
+        width: 164px;
+    }
+    /*-------------------------------------------------------Reservation Page--------------------------------------------------------------------*/
+    .reservationform {
+        max-width: 679px;
+    }
+
+
+
+     
+
+
 }
 

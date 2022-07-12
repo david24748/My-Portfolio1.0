@@ -253,7 +253,7 @@ nav li a:hover{
     width: 149px;
     margin-left: 49px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: -2px;
     margin-top: -18px;
     padding-bottom: 33px;
 }
@@ -343,6 +343,7 @@ footer :nth-child(1){
     grid-row: 1/2;
 }
 footer :nth-child(2){
+    display: initial;
     grid-column: 3;
     grid-row: 2;
     margin-top: -43px;
@@ -354,8 +355,8 @@ footer :nth-child(3){
     grid-column: 3;
     grid-row: 1;
     color: white;
-    font-size: 17px;
-    margin-left: 0px;
+    font-size: 14px;
+    margin-left: 5px;
 }
 footer :nth-child(4){
     grid-column: 3;
@@ -435,6 +436,229 @@ footer img{
 .whatshould{
     text-align: center;
 }
+.directorypage{
+    display: block;
+    text-align: center;
+}
+.infocards{
+    border: 1px solid transparent;
+    margin: auto;
+    padding: 20px;
+    padding: 0.2px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.infocards a{
+    font-size: 20px;
+}
+.infocards img{
+    width: 200px;
+}
+.infocards section{
+    border: 1px solid #000;
+    background-color: #bbb;
+    margin: 20px;
+}
+.infocards img{
+    text-align: center;
+}
+.infocards p{
+    font-size: 20px;
+}
+.infocards h2{
+    font-size: 30px;
+}
+/* imgg */
+.templeimg img{
+    display: none;
+}
+
+/* Choose fav */
+.choseefav{
+    text-align: center;
+    font-size: 22px;
+}
+/* likes */
+.likebuttonss{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    justify-items: center;
+}
+.likebuttonss img{
+    width: 92px;
+    height: 110px;
+    grid-row: 1;
+}
+.likebutton {
+    width: 82px;
+    display: block;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240 75 113);
+    padding: 3px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.likebutton1 {
+    width: 82px;
+    display: block;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240 75 113);
+    padding: 3px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.likebutton2 {
+    width: 82px;
+    display: block;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240 75 113);
+    padding: 3px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.likebutton3 {
+    width: 82px;
+    display: block;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240 75 113);
+    padding: 3px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+/*-------------------------------------------------------Reservation Page--------------------------------------------------------------------*/
+.reserve{
+    background-color: #ccc7c7;
+    height: 1037px;
+    padding-top: 5px;
+}
+
+.reservationform {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 112px;
+    margin-bottom: 55px;
+    position: relative;
+  }
+  
+  #contact {
+    background: #F9F9F9;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 1px;
+    padding-right: 55px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="datetime-local"],
+  #contact textarea,
+  select {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #db545a;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: #4CAF50;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /*-------------------------------------------------------Thanks Page--------------------------------------------------------------------*/
+
+  .thankspage{
+    margin-top: 211px;
+    margin-bottom: 120px;
+    text-align: center;
+    background-color: #eee;
+  }
+  
+
+  
 
 
 

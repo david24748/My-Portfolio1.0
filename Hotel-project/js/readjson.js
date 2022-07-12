@@ -37,7 +37,7 @@ function displaytemples(Templesinfo){
   picture.setAttribute('src', Templesinfo.img);
   picture.setAttribute('alt', Templesinfo.temple)
 
-  card.setAttribute('class', 'grid');
+  card.setAttribute('class', 'grid' );
 
 
   card.appendChild(name)

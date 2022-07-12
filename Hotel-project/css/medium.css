@@ -160,6 +160,71 @@
         height: 200px;
         margin-top: initial;
     }
+    /*footer*/
+    footer :nth-child(3){
+        font-size: 17px;
+    }
+
+
+    /*-------------------------------------------------------Temple Page--------------------------------------------------------------------*/
+    /*stats*/
+    .statstemples{
+        height: 74px;
+        width: 368px;
+    }
+    .statstemples h2{
+        font-size: 20px;
+        width: 288px;
+    }
+    
+    /*infocards*/
+
+    .whatshould{
+        text-align: center;
+    }
+    .directorypage{
+        display: block;
+        text-align: center;
+    }
+    .infocards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .infocards a{
+        font-size: 15px;
+    }
+    .infocards img{
+        height: 152px;
+    }
+
+    .infocards p{
+        font-size: 15px;
+    }
+    .infocards h2{
+        font-size: 30px;
+    }
+    /* likes */
+    .likebutton {
+        width: 115px;
+    }
+    .likebutton1 {
+        width: 115px;
+    }
+    .likebutton2 {
+        width: 115px;
+    }
+    .likebutton3 {
+        width: 115px;
+    }
+    /*-------------------------------------------------------Reservation Page--------------------------------------------------------------------*/
+
+    #contact{
+        box-shadow: rgb(224 53 53 / 20%) 15px 15px 15px 15px, rgb(0 0 0 / 24%) 10px 5px 13px 10px
+    }
+
+
 }
 @media only screen and (min-width: 730px){
     /* section fall in love */
