@@ -94,6 +94,13 @@
         margin-left: auto;
         margin-right: auto;
     }
+    /*-------------------------------------------------------Services Page--------------------------------------------------------------------*/
+    #formservice {
+        width: 300px;
+    }
+    #formserviceone {
+        width: 300px;
+    }
 }
 
 @media only screen and (min-width: 597px){
@@ -142,7 +149,7 @@
     }
     .currentweatherinfo {
         grid-column: 1;
-        height: 166px;
+        height: 227px;
         width: 174px;
     }
 
@@ -150,14 +157,14 @@
     .nextweatherinfo {
         grid-column: 2;
         width: 174px;
-        height: 200px;
+        height: 227px;
     }
 
     /* Weather table3 */
     .doubleweatherinfo {
         grid-column: 3;
         width: 174px;
-        height: 200px;
+        height: 227px;
         margin-top: initial;
     }
     /*footer*/
@@ -223,6 +230,75 @@
     #contact{
         box-shadow: rgb(224 53 53 / 20%) 15px 15px 15px 15px, rgb(0 0 0 / 24%) 10px 5px 13px 10px
     }
+    /*-------------------------------------------------------Services Page--------------------------------------------------------------------*/
+    .backgorundfood {
+            width: 322px;
+            margin-bottom: 5px;
+            margin-left: -199px;
+    }
+    .food {
+        width: 339px;
+        height: 267px;
+        margin-left: -303px;
+        margin-top: -32px;
+    }
+    .paraone {
+        margin-left: 221px;
+        margin-right: 13px;
+        margin-top: -19px;
+    }
+    .paratwo {
+        margin-left: 14px;
+        margin-right: 168px;
+        margin-top: -31px;
+    }
+    .parathree {
+        margin-left: 172px;
+        margin-top: -29px;
+    }
+    .Fulltime {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1px;
+        padding-bottom: 2px;
+        width: 400px;
+    }
+    .Specialized {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1px;
+        padding-bottom: 2px;
+        width: 400px;
+    }
+    /* form  */
+
+    .formgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    #formservice {
+        margin-left: auto;
+        margin-right: auto;
+        width: 155px;
+    }
+    #formserviceone {
+        margin-left: auto;
+        margin-right: auto;
+        width: 155px;
+    }
+    .cardone img {
+        width: 168px;
+    }
+    .cardtwo img {
+        width: 168px;
+        height: 113px;
+    }
+    
+    
+    
+
+
 
 
 }
@@ -238,5 +314,20 @@
     .washingtontemple img{
         width: 501px;
     }
+    /*-------------------------------------------------------Services Page--------------------------------------------------------------------*/
+    #formservice {
+        width: 239px;
+    }
+    #formserviceone {
+        width: 239px;
+    }
+    .cardone img {
+        width: 243px;
+    }
+    .cardtwo img {
+        width: 246px;
+        height: 156px;
+    }
+
 }
 

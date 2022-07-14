@@ -33,6 +33,18 @@ body{
     max-width: 900px;
     margin: 0 auto;
 }
+h2 h3 h4{
+    font-family: 'Lobster', cursive;
+}
+h1{
+    font-family: 'Archivo Black', sans-serif;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 /*ham button*/
@@ -105,8 +117,6 @@ nav li a:hover{
 .dot {
     background: #db545a;
     border-radius: 0.8em;
-   -moz-border-radius: 0.8em;
-   -webkit-border-radius: 0.8em;
    color: #ffffff;
    display: inline-block;
    font-weight: bold;
@@ -255,7 +265,6 @@ nav li a:hover{
     text-align: center;
     margin-bottom: -2px;
     margin-top: -18px;
-    padding-bottom: 33px;
 }
 .currentweatherinfo h4{
     margin-bottom: 0px;
@@ -382,6 +391,9 @@ footer span, a{
 footer img{
     width:80px;
 }
+footer a{
+    font-size: 17px;
+}
 
 
 #banner{
@@ -482,7 +494,6 @@ footer img{
 .likebuttonss{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row: 1fr 1fr;
     justify-items: center;
 }
 .likebuttonss img{
@@ -504,7 +515,6 @@ footer img{
     outline: none;
     color: #ffffff;
     text-decoration: none;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 .likebutton1 {
@@ -521,7 +531,6 @@ footer img{
     outline: none;
     color: #ffffff;
     text-decoration: none;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 .likebutton2 {
@@ -538,7 +547,6 @@ footer img{
     outline: none;
     color: #ffffff;
     text-decoration: none;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 .likebutton3 {
@@ -555,7 +563,6 @@ footer img{
     outline: none;
     color: #ffffff;
     text-decoration: none;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -617,8 +624,6 @@ footer img{
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
   }
@@ -657,6 +662,238 @@ footer img{
     background-color: #eee;
   }
   
+    /*-------------------------------------------------------Services Page--------------------------------------------------------------------*/
+
+.reception{
+    text-align: center;
+}
+.reception h2{
+    margin-top: 78px;
+}
+.backgorundfood{
+    width: 300px;
+    margin-bottom: -23px;
+}
+.food{
+    width: 321px;
+    height: 279px;
+    margin-left: 53px;
+    position: relative;
+    z-index: 100;
+    margin-top: -237px;
+}
+.paraone{
+    background-color: #aaa;
+    margin-left: 13px;
+    margin-right: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+
+}
+.paratwo{
+    background-color: #db545a;
+    margin-left: 13px;
+    margin-right: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+.parathree{
+    background-color: #db545a;
+    margin-left: 13px;
+    margin-right: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+/* fulltime section */
+
+.hh{
+    text-align: center;
+}
+.Fulltime{
+    text-align: center;
+    background-color: #aaa;
+    margin-left: 13px;
+    margin-right: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.fulltime p{
+    font-size: 17px;
+}
+.Specialized{
+    text-align: center;
+    background-color: #db545a;
+    margin-left: 13px;
+    margin-right: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.Specialized p{
+    font-size: 17px;
+}
+
+/* Cards form */
+#formservice {
+    background: #F9F9F9;
+    padding-left: 46px;
+    padding-bottom: 8px;
+    padding-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 55px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+  }
+  
+  #formservice h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #formservice h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  #formserviceone {
+    background: #F9F9F9;
+    padding-left: 46px;
+    padding-bottom: 8px;
+    padding-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 55px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+  }
+  
+  #formserviceone h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #formserviceone h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #formservice input[type="text"],
+  #formservice input[type="email"],
+  #formservice input[type="tel"],
+  #formservicetextarea,
+  select {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #formservice textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #formservice button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #db545a;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #formservice button[type="submit"]:hover {
+    background: #4CAF50;
+  }
+  
+  #formservice button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #formserviceone input[type="text"],
+  #formserviceone input[type="email"],
+  #formserviceone input[type="tel"],
+  #formserviceonetextarea,
+  select {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #formserviceone textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #formserviceone button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #db545a;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #formserviceone button[type="submit"]:hover {
+    background: #4CAF50;
+  }
+  
+  #formserviceone button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+.cardone{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.cardone img{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cardtwo{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.cardtwo img{
+    width: 300px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
   
 

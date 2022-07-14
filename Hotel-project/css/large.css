@@ -68,21 +68,21 @@
     /* Weather */
     /* Weather table1 */
     .currentweatherinfo {
-        height: 149px;
+        height: 208px;
         width: 248px;
     }
     
     
     /* Weather table2 */
     .nextweatherinfo {
-        height: 180px;
+        height: 208px;
         width: 248px;
     }
     
     
     /* Weather table3 */
     .doubleweatherinfo{
-        height: 180px;
+        height: 208px;
         width: 248px;
     }
     /*-------------------------------------------------------Temple Page--------------------------------------------------------------------*/
@@ -128,6 +128,29 @@
     /*-------------------------------------------------------Reservation Page--------------------------------------------------------------------*/
     .reservationform {
         max-width: 679px;
+    }
+    /*-------------------------------------------------------Services Page--------------------------------------------------------------------*/
+    .backgorundfood {
+        width: 463px;
+        height: 300px;
+        margin-left: -96px;
+    }
+    .food {
+        width: 483px;
+        margin-left: -435px;
+    }
+    .paraone {
+        margin-left: 221px;
+        margin-right: 150px;
+    }
+    .paratwo {
+        margin-left: 93px;
+    }
+    .parathree {
+        margin-right: 114px;
+    }
+    .Fulltime {
+        width: 513px;
     }
 
 
