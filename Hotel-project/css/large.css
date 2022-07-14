@@ -181,6 +181,16 @@
     .box1temples img {
         height: 540px;
     }
+    .infocards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: none;
+    }
+    .likebuttonss img {
+        width: 197px;
+        height: 165px;
+        /* height: 130px; */
+    }
     
     
 }
