@@ -154,7 +154,7 @@
     }
 }
 @media only screen and (min-width: 1000px){
-    /* Header image*/
+    /* Header */
     .box1 img {
         height: 540px;
     }
@@ -189,12 +189,24 @@
     .likebuttonss img {
         width: 197px;
         height: 165px;
-        /* height: 130px; */
     }
     
     
 }
 @media only screen and (min-width: 1200px){
+    /* Header */
+    .stats h2 {
+        font-size: 25px;
+        width: 656px;
+    }
+    .stats {
+        height: 149px;
+        width: 743px;
+    }
+    .stats button {
+        font-size: 27px;
+    }
+    /* Fall in love section */
     .roomone {
         width: 261px;
         margin-left: 687px;
