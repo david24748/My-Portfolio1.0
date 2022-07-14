@@ -152,11 +152,47 @@
     .Fulltime {
         width: 513px;
     }
-
-
-
-     
-
+}
+@media only screen and (min-width: 1000px){
+    /* Header image*/
+    .box1 img {
+        height: 540px;
+    }
+    /* What can we offer section */
+    .box2, .box3, .box4, .box5 {
+        width: 248px;
+    }
+    /* Fall in love section */
+    .fallsqu {
+        width: 282px;
+        margin-left: -36px;
+    }
+    /* Weather section */
+    .currentweatherinfo {
+        width: 305px;
+    }
+    .nextweatherinfo {
+        width: 305px;
+    }
+    .doubleweatherinfo {
+        width: 305px;
+    }
+    /*-------------------------------------------------------Temple Page--------------------------------------------------------------------*/
+    .box1temples img {
+        height: 540px;
+    }
+    
+    
+}
+@media only screen and (min-width: 1200px){
+    .roomone {
+        width: 261px;
+        margin-left: 687px;
+    }
+    .fallsqu {
+        width: 282px;
+        margin-left: 110px;
+    }
 
 }
 
