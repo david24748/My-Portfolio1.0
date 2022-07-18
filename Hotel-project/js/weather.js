@@ -19,7 +19,7 @@ const doubleWindspeed = document.querySelector('#doublewindSpeed');
 const doubledetails = document.querySelector('#doubledetails');
 const doublehumidity = document.querySelector('#doublehumi');
 
-const url = `http://api.openweathermap.org/data/2.5/forecast?q=Bethesda&appid=8840315173792de057a1c478bbb00ba4&units=Imperial`;
+const url = `https://api.openweathermap.org/data/2.5/forecast?q=Bethesda&appid=8840315173792de057a1c478bbb00ba4&units=Imperial`;
 
 apiFetch(url);
 
