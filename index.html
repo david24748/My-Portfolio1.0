@@ -4,20 +4,77 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Oswald&family=Pinyon+Script&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css//small.css">
-    <link rel="stylesheet" href="css//medium.css">
-    <link rel="stylesheet" href="css//normalize.css">
-    <title>juan D. Estrada wwd230 projects</title>  
+    <link rel="stylesheet" href="css//project.css">
+    <title>My Portfolio</title>
+    <script src="https://unpkg.com/scrollreveal"></script> 
   </head>
 
   <body>
-    <header>
-      <img src="images//YO.JPG" alt="Editor illustration">
-      <h1>Juan D. Estrada</h1>
-    </header>
+
+      <!-- Barra de navegación -->
+  <nav class="nav">
+    <ul>
+      <li><a href="#header">Inicio</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#about">Acerca de mí</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+      <header id="header" class="header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1>Bienvenido a Mi Portfolio</h1>
+          <p>Explora mis ideas y proyectos plasmados con pasión.</p>
+        </div>
+      </header>
 
     <main>
-      <h2>WDD 230: Assignment portal.</h2> 
+
+        <!-- Sección Proyectos -->
+        <section id="projects">
+          <h2 class="section-title">Proyectos</h2>
+          <div class="project">
+            <h2>Proyecto 1</h2>
+            <p>Una breve descripción del proyecto 1 destacando su esencia y modernidad.</p>
+          </div>
+          <div class="project">
+            <h2>Proyecto 2</h2>
+            <p>Una breve descripción del proyecto 2 que resalta su innovación.</p>
+          </div>
+          <!-- Agregar más bloques de proyecto -->
+        </section>ve descripción del proyecto 2 que resalta su innovación.</p>
+
+        <section id="details">
+          <h2 class="section-title">Detalles Adicionales</h2>
+          <div class="fade">
+            <h3>Detalle 1</h3>
+            <p>Una breve explicación de un aspecto en particular...</p>
+          </div>
+          <div class="fade">
+            <h3>Detalle 2</h3>
+            <p>Otra explicación complementaria...</p>
+          </div>
+        </section>
+
+          <!-- Sección Acerca de mí -->
+        <section id="about">
+          <h2 class="section-title">Acerca de mí</h2>
+          <p style="text-align: center; max-width: 800px; margin: auto;">
+            Soy un creador apasionado que plasma sus ideas y proyectos a lo largo de la vida. 
+            Este portfolio es una ventana a mi proceso creativo y técnico.
+          </p>
+        </section>
+          <!-- Sección Contacto -->
+        <section id="contact">
+          <h2 class="section-title">Contacto</h2>
+          <p style="text-align: center;">
+            ¿Tienes un proyecto en mente o deseas colaborar? Escríbeme a 
+            <a href="mailto:correo@example.com">correo@example.com</a>.
+          </p>
+        </section>
+
+
+    <!--  <h2>WDD 230: Assignment portal.</h2> 
       <hr>
           <ul>
               <li>Design Rules: <a href="lesson2/design_principles.html"> Web design principles</a></li>
@@ -30,6 +87,8 @@
               <li>Temples chamber project: <a href="Hotel-project///index.html">Final Project</a></li>
           </ul>
             <p>Guide</p>
+-->
+            
     </main>
 
     <footer>
@@ -38,5 +97,24 @@
 
     </footer>
     <script src="js//script.js"></script>
+    <script>
+      // Animación para los elementos .project desde la izquierda
+      ScrollReveal().reveal('.project', {
+        duration: 1000,
+        distance: '50px',
+        origin: 'left',
+        easing: 'ease-in-out',
+        interval: 300
+      });
+  
+      // Animación para los elementos .fade desde abajo
+      ScrollReveal().reveal('.fade', {
+        duration: 1200,
+        delay: 200,
+        origin: 'bottom',
+        distance: '100px',
+        reset: true
+      });
+    </script>
   </body>
 </html>
