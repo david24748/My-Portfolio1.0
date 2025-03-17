@@ -90,6 +90,16 @@
         font-size: 2em;
         color: #333;
       }
+
+      /* Seccion details */
+      .fade{
+        padding: 50px;
+        text-align: center;
+      }
+
+      .fade h3{
+        padding: 10px;
+      }
   
       /* Estilos para cada bloque de proyecto */
       .project {
