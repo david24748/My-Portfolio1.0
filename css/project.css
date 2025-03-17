@@ -93,7 +93,7 @@
   
       /* Estilos para cada bloque de proyecto */
       .project {
-        opacity: 0;
+        opacity: 1;
         transform: translateX(-50px);
         margin-bottom: 40px;
         background: white;
@@ -108,4 +108,16 @@
       .project p {
         font-size: 1em;
         color: #555;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+      }
+      .Me {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: auto;
+        padding-bottom: 30px;
       }
