@@ -109,6 +109,13 @@
         background: white;
         padding: 20px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                /* Definimos un ancho que se adapte y se centre */
+        width: 100%;
+        box-sizing: border-box;
+                
+                /* Alternativamente, si omites max-width, puedes utilizar: 
+                  margin: 0 auto; 
+                  para centrar el contenido, pero combinar ambos métodos ofrece un control mayor. */
         border-radius: 8px;
       }
       .project h2 {
@@ -131,3 +138,370 @@
         margin: auto;
         padding-bottom: 30px;
       }
+
+      /* Cada bloque de proyecto */
+      /* Contenedor que agrupa todos los proyectos */
+      .projects-container {
+        width: 100%;
+        max-width: 1200px;  /* Puedes ajustar este valor según tu diseño */
+        margin: 0 auto;     /* Centra el contenedor */
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;          /* Espacio entre cada bloque */
+      }
+
+      /* Contenedor de la galería de videos con CSS Grid */
+      .video-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px 0;
+      }
+
+      /* Cada bloque de video */
+      .video-item {
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Aseguramos que el iframe ocupe el 100% del ancho del contenedor,
+        manteniendo la relación 16:9 para el video */
+      .video-item iframe {
+        width: 100%;
+        height: calc(100% * 9 / 16); /* Ajusta la altura en relación a la anchura */
+        display: block;
+      }
+
+      /* Estilos para la descripción debajo del video */
+      .video-description {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .video-description h3 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+
+      .video-description p {
+        font-size: 0.95em;
+        line-height: 1.4;
+        color: #555;
+      }
+ /* Sección de Flyers */
+#project-flyers {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#project-flyers .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Botón para alternar entre vistas */
+.view-toggle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-toggle button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff5722;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-toggle button:hover {
+  background-color: #e64a19;
+}
+
+/* Galería de Flyers */
+
+/* Vista Horizontal (Grid View) */
+.flyers-gallery.grid-view {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Vista Vertical (List View) */
+.flyers-gallery.list-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Esta propiedad centra cada flyer horizontalmente */
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Estilos para cada flyer */
+.flyer {
+  width: 300px;   /* Ancho fijo en vista horizontal */
+  flex: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.flyer img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.flyer img:hover {
+  transform: scale(1.03);
+}
+
+/* Modal para ampliar las imágenes */
+.modal {
+  display: none;               /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);  /* Fondo semi-transparente */
+  overflow: auto;
+}
+
+.modal-content {
+  display: block;
+  margin: 50px auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Contenedor para la descripción dentro del modal */
+.modal-caption {
+  margin: 20px auto;
+  max-width: 80%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Botón de cierre del modal */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1010;
+}
+/* Sección About me con fondo futurista */
+#about {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 80px 20px;
+  position: relative;
+}
+
+/* Contenedor centrado y responsive */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título de About me */
+.about-title {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Layout para imagen y texto */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  animation: slideFadeIn 1s ease-in-out;
+}
+
+/* Animación sutil para el contenido */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo de la imagen */
+.about-image {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.about-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Estilo del texto: legible y moderno */
+.about-text {
+  flex: 2 1 500px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: left;
+  padding: 20px;
+}
+
+.about-text p {
+  margin: 0;
+}
+/* Sección Contact */
+#contact {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e1e1e, #323232);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  /* Simula un efecto parallax sutil con la imagen de fondo (si deseas agregar una imagen, descomenta las líneas siguientes) */
+  /* background-image: url('images/futuristic-bg.jpg'); */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  /* background-position: center; */
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Contenedor que agrupa el formulario y la info */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: contactFadeIn 1s forwards ease-out;
+}
+
+@keyframes contactFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Formulario de contacto */
+.contact-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ddd;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background: #ff5722;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e64a19;
+  transform: translateY(-3px);
+}
+
+/* Información de contacto */
+.contact-info {
+  flex: 1 1 300px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
