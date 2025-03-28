@@ -159,6 +159,7 @@
         gap: 20px;
         padding: 20px 0;
       }
+  
 
       /* Cada bloque de video */
       .video-item {
@@ -166,33 +167,46 @@
         padding: 10px;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        height: 700px;
+        min-height: 600px; /* Si deseas que el recuadro se ajuste al contenido, usa min-height o elimina esta propiedad */
       }
-
+  
+      
       /* Aseguramos que el iframe ocupe el 100% del ancho del contenedor,
         manteniendo la relación 16:9 para el video */
-      .video-item iframe {
-        width: 100%;
-        height: calc(100% * 9 / 16); /* Ajusta la altura en relación a la anchura */
-        display: block;
-      }
+        .video-item iframe {
+          width: 100%;
+          height: calc(100% * 9 / 16);
+          display: block;
+        }
+    
 
       /* Estilos para la descripción debajo del video */
       .video-description {
         margin-top: 10px;
         text-align: center;
+        box-sizing: border-box;
+        /* Opcional: agrega padding si deseas más espacio interno */
+        padding: 5px;
       }
+  
+  
 
       .video-description h3 {
         font-size: 1.2em;
         margin-bottom: 5px;
       }
-
+  
+  
       .video-description p {
         font-size: 0.95em;
         line-height: 1.4;
         color: #555;
+        white-space: normal;            /* Permitir la envoltura normal de las líneas */
+        overflow-wrap: break-word;       /* Para que las palabras largas se rompan correctamente */       
+        hyphens: auto;                  /* Agrega guiones cuando sea posible */
       }
+  
+  
  /* Sección de Flyers */
 #project-flyers {
   padding: 80px 20px;
