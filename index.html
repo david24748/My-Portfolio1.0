@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="css//project.css">
     <title>My Portfolio</title>
     <script src="https://unpkg.com/scrollreveal"></script> 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header"); // Seleccionamos el header
+        const images = [
+          "images//imagesforheader//remos.jpg",
+          "images//imagesforheader//salto.jpg",
+          "images//imagesforheader//universe.jpg",
+          "images//imagesforheader//universe2.jpg",
+        ]; // Array con las rutas de las imágenes
+        let currentIndex = 0; // Índice inicial
+
+    
+        // Función para cambiar el fondo
+        function changeBackground() {
+          header.style.backgroundImage = `url('${images[currentIndex]}')`; // Cambia el fondo
+          currentIndex = (currentIndex + 1) % images.length; // Avanza al siguiente índice, vuelve al inicio si llega al final
+        }
+    
+        // Inicia el carrusel
+        changeBackground(); // Muestra la primera imagen de inmediato
+        setInterval(changeBackground, 5000); // Cambia cada 5 segundos
+      });
+    </script>
+    
   </head>
 
   <body>
@@ -243,59 +267,326 @@
                     recreate the immersive soundscape of a tropical jungle.</p>
                 </div>
               </div>
+          <!-- Video 10 -->
+          <div class="video-item">
+            <iframe 
+              src="https://www.youtube.com/embed/XMnYYohQKcM" 
+              title="Adding animations to real videos" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+            <div class="video-description">
+              <h3>Adding animations to real videos</h3>
+              <p>This video shows how it is possible to add a bit of animation to real videos to provide the user with a better engagement.</p>
+            </div>
+          </div>
+            <!-- Video 11 -->
+          <div class="video-item">
+            <iframe 
+              src="https://www.youtube.com/embed/ByjteVKtbhQ" 
+              title="Blade Runner trailer" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+            <div class="video-description">
+              <h3>Blade Runner trailer</h3>
+              <p>Trailers are powerful tools for sparking curiosity and drawing audiences into an 
+                audiovisual experience. In this project, we reimagined scenes from the iconic 
+                film Blade Runner to craft an unofficial trailer that highlights my skills in editing, 
+                storytelling, and audiovisual design. This piece aims to captivate viewers while 
+                showcasing our creative approach to cinematic storytelling.</p>
+              </div>
+            </div>
+            <!-- Video 12 -->
+          <div class="video-item">
+            <iframe 
+              src="https://www.youtube.com/embed/Ka1JRksBSBs" 
+              title="After Effects uses" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+            <div class="video-description"> 
+              <h3>After Effects uses</h3>
+              <p>This project demonstrates just a glimpse of what can be achieved with 
+                advanced editing software like After Effects and Premiere Pro. In the 
+                'chickens' video, we explore how to make objects track a character, 
+                effectively utilizing resources to produce creative and dynamic results. 
+                Additionally, we showcase the use of path animations to guide text along 
+                a desired trajectory. Similarly, in the 'planets' video, we employ a 
+                sequence of movements to create a realistic sense of depth and perspective.</p>
+              </div>
+            </div>
             </div>
           </section>
            <!-- Puedes agregar más bloques "video-item" siguiendo este mismo formato -->
           </div>
         </section>
-                <!-- Sección de Flyers de Proyectos -->
-        <section id="project-flyers">
-          <h2 class="section-title">Project Flyers</h2>
-          
-          <!-- Botón de alternar entre vistas -->
-          <div class="view-toggle">
-            <button id="toggle-view">Cambiar a vista Lista</button>
-          </div>
-          
-          <!-- Contenedor de la galería con vista por defecto tipo grid (horizontal) -->
-          <div class="flyers-gallery grid-view">
-            <!-- Flyer 1 -->
-            <div class="flyer">
-              <!-- Agrega el atributo data-caption con la descripción deseada -->
-              <img src="images/flyer1.jpg" alt="Flyer Project 1" loading="lazy" 
-                  data-caption="Descripción detallada del Flyer Project 1">
-            </div>
-            <!-- Flyer 2 -->
-            <div class="flyer">
-              <img src="images/flyer2.jpg" alt="Flyer Project 2" loading="lazy" 
-                  data-caption="Aquí va la descripción del Flyer Project 2">
-            </div>
-            <!-- Flyer 3 -->
-            <div class="flyer">
-              <img src="images/flyer3.jpg" alt="Flyer Project 3" loading="lazy" 
-                  data-caption="Esta es la descripción del Flyer Project 3">
-            </div>
-            <!-- Flyer 4 -->
-            <div class="flyer">
-              <img src="images/flyer4.jpg" alt="Flyer Project 4" loading="lazy" 
-                  data-caption="Descripción del Flyer Project 4">
-            </div>
-            <!-- Flyer 5 -->
-            <div class="flyer">
-              <img src="images/flyer5.jpg" alt="Flyer Project 5" loading="lazy" 
-                  data-caption="Descripción del Flyer Project 5">
-            </div>
-            <!-- Puedes agregar más flyers siguiendo este mismo patrón -->
-          </div>
+            <!-- Sección de Flyers de Proyectos -->
+            <section id="project-flyers">
+              <h2 class="section-title">Project Flyers (Click on each image to get more details)</h2>
+            
+              <!-- Botón para alternar entre vistas -->
+              <div class="view-toggle">
+                <button id="toggle-view">Cambiar a vista Lista</button>
+              </div>
+            
+              <!-- Contenedor de la galería -->
+              <div class="flyers-gallery grid-view">
+                <!-- Flyer 1 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//cartasterminadas.png" alt="Flyer 1" data-caption="For this project, I used Illustrator and Photoshop 
+                      to design a series of poker cards with a Viking-era-inspired style. The primary goal was to capture the player's 
+                      attention and appeal to a specific audience interested in collecting unique cards. I invested a 
+                      significant amount of time, particularly during the finalization stage, to ensure the printed results 
+                      matched the intended design. The goal was successfully achieved, and the cards were donated to an educational institution.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+            
+                <!-- Flyer 2 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//Gorillaz.jpg" alt="Flyer 1" data-caption="For this project, we drew deep inspiration from the iconic soundtrack of 
+                      Gorillaz to conceive and develop a graphic illustration that embodied a vibrant, modern style. Using Photoshop as the main tool, 
+                      we carefully focused on visual details, textures, and colors to evoke a sensation that could seamlessly fit into the cover of a 
+                      music album. The design aimed not only to capture the dynamic and experimental spirit associated with Gorillaz but also to convey a 
+                      unique energy that would resonate with a contemporary audience. This project was created as an opportunity to apply and showcase 
+                      the skills gained through various graphic and digital design courses. Every aspect of the process, from conceptualization to final 
+                      execution, reflected a commitment to continuous learning and creativity. The final result not only achieved its aesthetic goal but 
+                      also served as a cornerstone in reinforcing the professional narrative of my skills and artistic vision.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+                <!-- Flyer 3 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//vishnu.png" alt="Flyer 1" data-caption="For this project, I drew inspiration from Vishnu, a central divine figure in a 
+                      specific culture, with the aim of respectfully paying homage to its values and beliefs. I created a detailed illustration of Vishnu that 
+                      incorporates a stained-glass effect, designed to capture the audience's attention and highlight the symbolic beauty of this representation. 
+                      This approach aimed to produce a unique visual impact, evoking a sense of reverence and cultural connection. The creation of this 
+                      piece required a careful selection of colors, shapes, and textures to replicate the aesthetics of stained glass and convey a message 
+                      of respect toward the represented culture. This project focused not only on technical precision but also on fostering a deeper appreciation 
+                      for the cultural heritage depicted. The final result met the visual expectations and left an excellent impression among the audience.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+            
+                <!-- Flyer 4 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//munepng.png" alt="Flyer 1" data-caption="This project involved the creation of a 3D character using Blender, 
+                      developed specifically to be showcased at an exhibition called La Feria del Libro in Bogotá, Colombia. The character, a hybrid 
+                      between human and shark, stood out for its unique design and the emotional narrative accompanying it. Its tragic story revealed 
+                      how, after losing its parents and being rejected by its family due to its hybrid nature, the shark was forced to flee to the 
+                      surface. There, it faced societal challenges but, rather than succumbing to adversity, found the strength to create its own 
+                      version of itself, maintaining high self-esteem and developing a unique style that defined it. Through this small yet 
+                      powerful character, we conveyed a profound message: it doesn't matter what we are or how others perceive us; as long as 
+                      we cause no harm, we can shine authentically without conforming to others' expectations. This project not only left an 
+                      impact on the audience but also became an opportunity to explore the power of emotional and visual storytelling in the realm of 3D animation.">
+                      <img src="images//munepng2.png" alt="Flyer 1" data-caption="This project involved the creation of a 3D character using Blender, 
+                      developed specifically to be showcased at an exhibition called La Feria del Libro in Bogotá, Colombia. The character, a hybrid 
+                      between human and shark, stood out for its unique design and the emotional narrative accompanying it. Its tragic story revealed 
+                      how, after losing its parents and being rejected by its family due to its hybrid nature, the shark was forced to flee to the 
+                      surface. There, it faced societal challenges but, rather than succumbing to adversity, found the strength to create its own 
+                      version of itself, maintaining high self-esteem and developing a unique style that defined it. Through this small yet 
+                      powerful character, we conveyed a profound message: it doesn't matter what we are or how others perceive us; as long as 
+                      we cause no harm, we can shine authentically without conforming to others' expectations. This project not only left an 
+                      impact on the audience but also became an opportunity to explore the power of emotional and visual storytelling in the realm of 3D animation.">
+                      <img src="images//munepng3.png" alt="Flyer 1" data-caption="This project involved the creation of a 3D character using Blender, 
+                      developed specifically to be showcased at an exhibition called La Feria del Libro in Bogotá, Colombia. The character, a hybrid 
+                      between human and shark, stood out for its unique design and the emotional narrative accompanying it. Its tragic story revealed 
+                      how, after losing its parents and being rejected by its family due to its hybrid nature, the shark was forced to flee to the 
+                      surface. There, it faced societal challenges but, rather than succumbing to adversity, found the strength to create its own 
+                      version of itself, maintaining high self-esteem and developing a unique style that defined it. Through this small yet 
+                      powerful character, we conveyed a profound message: it doesn't matter what we are or how others perceive us; as long as 
+                      we cause no harm, we can shine authentically without conforming to others' expectations. This project not only left an 
+                      impact on the audience but also became an opportunity to explore the power of emotional and visual storytelling in the realm of 3D animation.">
+                      <img src="images//munepng4.png" alt="Flyer 1" data-caption="This project involved the creation of a 3D character using Blender, 
+                      developed specifically to be showcased at an exhibition called La Feria del Libro in Bogotá, Colombia. The character, a hybrid 
+                      between human and shark, stood out for its unique design and the emotional narrative accompanying it. Its tragic story revealed 
+                      how, after losing its parents and being rejected by its family due to its hybrid nature, the shark was forced to flee to the 
+                      surface. There, it faced societal challenges but, rather than succumbing to adversity, found the strength to create its own 
+                      version of itself, maintaining high self-esteem and developing a unique style that defined it. Through this small yet 
+                      powerful character, we conveyed a profound message: it doesn't matter what we are or how others perceive us; as long as 
+                      we cause no harm, we can shine authentically without conforming to others' expectations. This project not only left an 
+                      impact on the audience but also became an opportunity to explore the power of emotional and visual storytelling in the realm of 3D animation.">
+                      <img src="images//munepng5.png" alt="Flyer 1" data-caption="This project involved the creation of a 3D character using Blender, 
+                      developed specifically to be showcased at an exhibition called La Feria del Libro in Bogotá, Colombia. The character, a hybrid 
+                      between human and shark, stood out for its unique design and the emotional narrative accompanying it. Its tragic story revealed 
+                      how, after losing its parents and being rejected by its family due to its hybrid nature, the shark was forced to flee to the 
+                      surface. There, it faced societal challenges but, rather than succumbing to adversity, found the strength to create its own 
+                      version of itself, maintaining high self-esteem and developing a unique style that defined it. Through this small yet 
+                      powerful character, we conveyed a profound message: it doesn't matter what we are or how others perceive us; as long as 
+                      we cause no harm, we can shine authentically without conforming to others' expectations. This project not only left an 
+                      impact on the audience but also became an opportunity to explore the power of emotional and visual storytelling in the realm of 3D animation.">
+                      <img src="images//munepng6.png" alt="Flyer 1" data-caption="This project involved the creation of a 3D character using Blender, 
+                      developed specifically to be showcased at an exhibition called La Feria del Libro in Bogotá, Colombia. The character, a hybrid 
+                      between human and shark, stood out for its unique design and the emotional narrative accompanying it. Its tragic story revealed 
+                      how, after losing its parents and being rejected by its family due to its hybrid nature, the shark was forced to flee to the 
+                      surface. There, it faced societal challenges but, rather than succumbing to adversity, found the strength to create its own 
+                      version of itself, maintaining high self-esteem and developing a unique style that defined it. Through this small yet 
+                      powerful character, we conveyed a profound message: it doesn't matter what we are or how others perceive us; as long as 
+                      we cause no harm, we can shine authentically without conforming to others' expectations. This project not only left an 
+                      impact on the audience but also became an opportunity to explore the power of emotional and visual storytelling in the realm of 3D animation.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+                <!-- Flyer 5 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//Proyecto.png" alt="Flyer 1" data-caption="In this project, I used various tools from Adobe's suite to design 
+                      the cover of a comic-style magazine, with the primary goal of promoting the comic Hija del Fuego, an original creation. The 
+                      story revolves around a princess who challenges traditional stereotypes and embarks on an exciting mission to discover her 
+                      true potential. As her journey unfolds, it is revealed that she possesses powers inherited from a dragon, transforming her 
+                      destiny and leading her to explore beyond the limits imposed by her surroundings. The cover design aimed to capture the 
+                      essence of this unique narrative, highlighting both the protagonist's strength and her evolution. This project provided an 
+                      opportunity to blend technical and artistic skills while striving to create a visual impact that would captivate the audience 
+                      and reflect the story's depth. It was a piece that combined creativity, storytelling, and design, achieving a result that not 
+                      only introduced the comic but also left a lasting impression on its readers.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+            
+                <!-- Flyer 6 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//moodboard.png" alt="Flyer 1" data-caption="This moodboard was created with the purpose of conveying a blend 
+                      of intense emotions, including solitude, protest, and an atmosphere of darkness. To achieve this visual impact, I utilized 
+                      advanced tools in Illustrator and Photoshop, focusing on the precise selection of colors, textures, and compositions to evoke these feelings. 
+                      The design was based on carefully chosen elements to craft a visual narrative that resonates emotionally with the viewer. Solitude was 
+                      expressed through empty spaces and muted tones, while protest was represented through graphic elements symbolizing resistance and 
+                      confrontation. Lastly, darkness was portrayed using shadows, deep contrasts, and a dark color palette, adding drama to the composition. 
+                      This project aimed not only to explore emotions through visual design but also to foster a meaningful connection with the audience.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+                <!-- Flyer 7 conslider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//milogo.JPG" alt="Flyer 1" data-caption="Here you can see my logo, designed with a monochromatic palette of black and white, 
+                      featuring a modern and sophisticated cat. This logo was inspired by my love for cats and my interest in fashion, aiming to combine both 
+                      elements into a design that is elegant and versatile. The creation process was carried out using tools like Illustrator and Procreate, 
+                      ensuring precise and professional execution. Every detail of the design was carefully considered to convey a balance between minimalism 
+                      and modernity, resulting in a logo that adapts to various contexts while maintaining its unique essence. This project not only reflects 
+                      my technical skills but also showcases my ability to integrate personal interests into creative and functional solutions.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+            
+                <!-- Flyer 8 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//Fondo_01_V8.png" alt="Flyer 8" data-caption="This project showcases the background designed for the animation Cats Being 
+                      Cats, where each object in the room was meticulously created using various tools from Adobe's suite. Every element of the environment was 
+                      carefully crafted to ensure the space reflected a warm and lively atmosphere, characteristic of a home inhabited by a human and two cats. 
+                      After building the background, animation techniques were applied in Moho to bring the elements to life, creating a dynamic and charming 
+                      visual experience. The project was completed with final edits done in Premiere, refining every detail to ensure seamless cohesion in the 
+                      audiovisual narrative. The main objective of this background was to evoke a sense of comfort and joy, allowing the audience to emotionally 
+                      connect with the space and the characters in the animation. This project also stood out for its integration of technical and artistic skills, 
+                      demonstrating an effective combination of creativity and expertise in digital design and animation.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+                <!-- Flyer 9 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//Hojaarbolsesion9.jpg" alt="Flyer 9" data-caption="In this project, we used Photoshop to create text that seamlessly integrated 
+                      with the background illustration, with the aim of promoting the use of typography that harmonizes with the visual design. The main objective was 
+                      to ensure that the colors and styles of the text aligned with the palette and message of the illustration, maintaining aesthetic harmony and preserving the narrative essence of the composition. 
+                      Every detail of the text, from its typography to its color and placement, was carefully selected to complement the overall design. This approach enhanced 
+                      the visual connection between the text and the illustration, achieving a cohesive and visually striking result. This project not only showcased advanced technical skills in digital editing but also demonstrated a deep understanding of balance and aesthetics in graphic design.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+            
+                <!-- Flyer 10 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//bosquegokudestello.png" alt="Flyer 10" data-caption="In this edition, we acquired an image from the PantherMedia agency as the 
+                      foundation for a creative project inspired by the Dragon Ball Z universe. We designed our own original character and carefully incorporated it 
+                      into the image composition. The main goal was to seamlessly integrate the character by adjusting colors, shadows, and details to ensure that the 
+                      final image appeared as one cohesive illustration rather than separate elements. The process involved meticulous adjustments to lighting, tones, 
+                      and textures to ensure the character not only fit visually but also conveyed the distinctive energy and style of Dragon Ball Z. This project stood 
+                      out not only for its high level of technical precision in digital editing but also for its creativity and ability to explore new design approaches within an established visual framework.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+
+                <!-- Flyer 11 con slider -->
+                <div class="flyer">
+                  <div class="slider">
+                    <button class="prev">&lt;</button>
+                    <div class="slides">
+                      <img src="images//Daviddeep.png" alt="Flyer 11" data-caption="This simple illustration was created with the purpose of generating a sense of depth in a text, 
+                      offering the viewer a perspective that goes beyond a flat design. Using specific visual techniques, the aim was to give the text a three-dimensional effect 
+                      that captures the audience's attention and provides a more immersive experience. The design focused on the strategic placement of shadows, gradients, 
+                      and contrasts to create a perspective effect, transforming a conventional element into something visually appealing and dynamic. This project not only 
+                      explores how small adjustments can create a significant visual impact but also highlights the importance of merging creativity and technique to communicate concepts effectively.">
+                    </div>
+                    <button class="next">&gt;</button>
+                  </div>
+                </div>
+                <!-- Puedes agregar más flyers siguiendo este mismo patrón -->
         </section>
 
-<!-- Modal para ampliar las imágenes -->
-<div id="flyer-modal" class="modal">
-  <span class="modal-close">&times;</span>
-  <img class="modal-content" id="modal-img" alt="Flyer Ampliado">
-  <!-- Contenedor para la descripción/caption en el modal -->
-  <div id="modal-caption" class="modal-caption"></div>
-</div>
+        <div id="flyer-modal" class="modal">
+          <span class="modal-close">&times;</span>
+        
+          <!-- Opcional: contenedor para controles del modal -->
+          <div class="modal-controls">
+            <!-- Botones de navegación ya existentes -->
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        
+            <!-- Botón de zoom con ícono de lupa -->
+            <button class="zoom-toggle" aria-label="Toggle Zoom">
+              <!-- Puedes usar un ícono con Font Awesome o similar; acá se usa texto como ejemplo -->
+              🔍
+            </button>
+          </div>
+        
+          <!-- Contenedor del slider; tus slides se generan dinámicamente -->
+          <div class="slides">
+            <!-- Cada slide tendrá su contenedor zoomable -->
+          </div>
+        
+          <div id="modal-caption" class="modal-caption"></div>
+        </div>
+
 
         <section id="details">
           <h2 class="section-title">Additional Details</h2>
@@ -305,10 +596,6 @@
               primary goal is to showcase my proficiency in modern web development techniques. The project 
               integrates real-time weather APIs to provide up-to-date environmental information and utilizes 
               JavaScript to offer dynamic content visualization—allowing users to explore data through interactive graphs or detailed lists. <a href="lesson3/index.html"> Click here to get more details</a></p>
-          </div>
-          <div class="fade">
-            <h3>Detalle 2</h3>
-            <p>Otra explicación complementaria...</p>
           </div>
         </section>
 
@@ -360,32 +647,33 @@
     </main>
 
     <footer>
+      <p>Images provided by <a href="https://unsplash.com" target="_blank">Unsplash</a>.</p>
       <h5> &copy; <span id="year"></span> // Juan D. Estrada // USA // This document was last modified:</h5> 
       <h5> Last update: <span id="time"></span> </h5>
-
     </footer>
     <script src="js//script.js"></script>
     <script>
-      // Animación para los elementos .project desde la izquierda
-      ScrollReveal().reveal('.project', {
-        duration: 1000,
-        distance: '50px',
-        origin: 'left',
-        easing: 'ease-in-out',
-        interval: 300,
-        reset: true
-      });
-  
-      // Animación para los elementos .fade desde abajo
-      ScrollReveal().reveal('.fade', {
-        duration: 1200,
-        delay: 200,
-        origin: 'bottom',
-        distance: '100px',
-        reset: true
-      });
-        // Alternar entre vista Grid y List
-        document.getElementById('toggle-view').addEventListener('click', function() {
+      document.addEventListener("DOMContentLoaded", function () {
+        /* ── 1. Animaciones con ScrollReveal ── */
+        ScrollReveal().reveal('.project', {
+          duration: 1000,
+          distance: '50px',
+          origin: 'left',
+          easing: 'ease-in-out',
+          interval: 300,
+          reset: true
+        });
+        ScrollReveal().reveal('.fade', {
+          duration: 1200,
+          delay: 200,
+          origin: 'bottom',
+          distance: '100px',
+          reset: true
+        });
+      
+        /* ── 2. Toggle de vista Grid / List ── */
+        const toggleBtn = document.getElementById('toggle-view');
+        toggleBtn.addEventListener('click', function () {
           const gallery = document.querySelector('.flyers-gallery');
           if (gallery.classList.contains('grid-view')) {
             gallery.classList.remove('grid-view');
@@ -398,35 +686,178 @@
           }
         });
       
-        // Modal para ampliar imágenes con descripción
-        document.addEventListener("DOMContentLoaded", function() {
-          const modal = document.getElementById("flyer-modal");
-          const modalImg = document.getElementById("modal-img");
-          const modalCaption = document.getElementById("modal-caption");
-          const closeBtn = document.querySelector(".modal-close");
+        /* ── 3. Modal: navegación, zoom y eventos ── */
+        const modal = document.getElementById("flyer-modal");
+        const slidesContainer = modal.querySelector(".slides");
+        const modalCaption = document.getElementById("modal-caption");
+        const closeModal = modal.querySelector(".modal-close");
+        const prevButton = modal.querySelector(".prev");
+        const nextButton = modal.querySelector(".next");
+        const zoomToggle = modal.querySelector(".zoom-toggle"); // Botón con ícono de lupa
       
-          // Agrega evento click a cada imagen del flyer
-          document.querySelectorAll(".flyers-gallery .flyer img").forEach(img => {
-            img.addEventListener("click", function() {
-              modal.style.display = "block";
-              modalImg.src = this.src;  // Muestra la imagen ampliada
-              // Asigna la descripción al modal usando el atributo data-caption
-              modalCaption.textContent = this.getAttribute("data-caption") || "";
-            });
-          });
+        let currentIndex = 0,
+            images = [];
       
-          // Cerrar el modal al hacer clic en el botón de cerrar
-          closeBtn.addEventListener("click", function() {
-            modal.style.display = "none";
-          });
+        // Variables para zoom y "pan"
+        let scale = 1,
+            isDragging = false,
+            dragStartX = 0,
+            dragStartY = 0,
+            currentPosX = 0,
+            currentPosY = 0;
       
-          // Cerrar el modal si se hace clic fuera de la imagen ampliada
-          modal.addEventListener("click", function(event) {
-            if (event.target === modal) {
-              modal.style.display = "none";
+        // Abre el modal al hacer clic en la imagen (solo la imagen, no las flechas)
+        document.querySelectorAll(".flyer img").forEach(img => {
+          img.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const flyer = this.closest(".flyer");
+            const flyerImgs = flyer.querySelectorAll("img");
+            images = Array.from(flyerImgs).map(im => ({
+              src: im.src,
+              caption: im.getAttribute("data-caption") || ""
+            }));
+            // Mostrar flechas solo si hay más de una imagen
+            if (images.length <= 1) {
+              prevButton.style.display = "none";
+              nextButton.style.display = "none";
+            } else {
+              prevButton.style.display = "block";
+              nextButton.style.display = "block";
             }
+            // Se generan los contenedores de imagen; solo la primera se mostrará
+            slidesContainer.innerHTML = images.map((imgObj, idx) => `
+              <div class="modal-content-wrapper" style="display:${idx === 0 ? "block" : "none"};">
+                <img class="modal-content zoomable" src="${imgObj.src}" alt="Imagen ampliada">
+              </div>
+            `).join("");
+            currentIndex = 0;
+            scale = 1; currentPosX = 0; currentPosY = 0;
+            modalCaption.textContent = images[currentIndex].caption;
+            modal.style.display = "block";
           });
         });
+      
+        // Actualiza el contenido del modal mostrando solo la imagen activa
+        function updateModal() {
+          Array.from(slidesContainer.children).forEach((slide, idx) => {
+            slide.style.display = (idx === currentIndex ? "block" : "none");
+          });
+          modalCaption.textContent = images[currentIndex].caption;
+          resetZoom();
+        }
+      
+        // Navegación modal: botones Prev y Next
+        prevButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          if (images.length) {
+            currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
+            updateModal();
+          }
+        });
+        nextButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          if (images.length) {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateModal();
+          }
+        });
+      
+        // Cerrar el modal
+        closeModal.addEventListener("click", () => { modal.style.display = "none"; });
+        modal.addEventListener("click", (e) => { if (e.target === modal) modal.style.display = "none"; });
+      
+        // Devuelve la imagen activa (para zoom y pan)
+        function getActiveImage() {
+          const activeSlide = slidesContainer.children[currentIndex];
+          return activeSlide ? activeSlide.querySelector(".zoomable") : null;
+        }
+        // Reinicia zoom y pan
+        function resetZoom() {
+          scale = 1; currentPosX = 0; currentPosY = 0;
+          const activeImg = getActiveImage();
+          if (activeImg) activeImg.style.transform = `scale(${scale}) translate(0px, 0px)`;
+        }
+      
+        // Zoom con rueda sobre el contenedor de slides
+        slidesContainer.addEventListener("wheel", function (e) {
+          e.preventDefault();
+          const activeImg = getActiveImage();
+          if (!activeImg) return;
+          const zoomStep = 0.1;
+          scale += (e.deltaY < 0 ? zoomStep : -zoomStep);
+          if (scale < 1) scale = 1;
+          activeImg.style.transform = `scale(${scale}) translate(${currentPosX}px, ${currentPosY}px)`;
+        });
+      
+        // "Pan": arrastrar la imagen
+        slidesContainer.addEventListener("mousedown", function (e) {
+          const activeImg = getActiveImage();
+          if (!activeImg) return;
+          isDragging = true;
+          dragStartX = e.clientX - currentPosX;
+          dragStartY = e.clientY - currentPosY;
+          activeImg.style.cursor = "grabbing";
+        });
+        slidesContainer.addEventListener("mousemove", function (e) {
+          if (!isDragging) return;
+          const activeImg = getActiveImage();
+          if (!activeImg) return;
+          currentPosX = e.clientX - dragStartX;
+          currentPosY = e.clientY - dragStartY;
+          activeImg.style.transform = `scale(${scale}) translate(${currentPosX}px, ${currentPosY}px)`;
+        });
+        slidesContainer.addEventListener("mouseup", function () {
+          isDragging = false;
+          const activeImg = getActiveImage();
+          if (activeImg) activeImg.style.cursor = "grab";
+        });
+        slidesContainer.addEventListener("mouseleave", function () {
+          isDragging = false;
+          const activeImg = getActiveImage();
+          if (activeImg) activeImg.style.cursor = "grab";
+        });
+      
+        // Botón de zoom (lupa): enciende/apaga un zoom predefinido (2x)
+        zoomToggle.addEventListener("click", function (e) {
+          e.stopPropagation();
+          const activeImg = getActiveImage();
+          if (!activeImg) return;
+          if (scale === 1) {
+            scale = 2;
+          } else {
+            scale = 1;
+            currentPosX = 0; currentPosY = 0;
+          }
+          activeImg.style.transform = `scale(${scale}) translate(${currentPosX}px, ${currentPosY}px)`;
+        });
+      
+        /* ── 4. (Opcional) Slider interno para flyers individuales ── */
+        document.querySelectorAll(".slider").forEach(slider => {
+          const slides = slider.querySelector(".slides");
+          const imgs = slides.querySelectorAll("img");
+          const sliderPrev = slider.querySelector(".prev");
+          const sliderNext = slider.querySelector(".next");
+          let idx = 0;
+          function updateSliderMain() {
+            slides.style.transform = `translateX(${-idx * 100}%)`;
+          }
+          if (imgs.length > 1) {
+            sliderPrev.addEventListener("click", function (e) {
+              e.stopPropagation();
+              idx = idx > 0 ? idx - 1 : imgs.length - 1;
+              updateSliderMain();
+            });
+            sliderNext.addEventListener("click", function (e) {
+              e.stopPropagation();
+              idx = (idx + 1) % imgs.length;
+              updateSliderMain();
+            });
+          } else {
+            if (sliderPrev) sliderPrev.style.display = "none";
+            if (sliderNext) sliderNext.style.display = "none";
+          }
+        });
+      });
       </script>
   </body>
 </html>
